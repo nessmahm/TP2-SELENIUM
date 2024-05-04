@@ -1,0 +1,87 @@
+{
+  "id": "71564516-584d-4660-8b48-3924795ea1e6",
+  "version": "2.0",
+  "name": "Execice 1",
+  "url": "https://safatelli.github.io/tp-test-logiciel/assets/hello.html",
+  "tests": [{
+    "id": "11302b79-9a4c-4a69-93a9-e3436ed5c8d3",
+    "name": "Test",
+    "commands": [{
+      "id": "a1cb223c-a276-4a81-850e-f46972c351a2",
+      "comment": "",
+      "command": "open",
+      "target": "https://safatelli.github.io/tp-test-logiciel/assets/hello.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c4b490b-702e-4fd2-8083-6bdad7593db0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "654x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "272388fd-3c31-4b44-bb9f-23fe53cc3f7e",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62dea30f-dc05-41af-88bc-fd3dfec51ff6",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nessma"
+    }, {
+      "id": "977c1400-42de-4b6e-bf2e-0085538fc67f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='afficherBonjour()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Bonjour')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70d00ff9-ca66-4fe1-a488-5cf1ef35e521",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=message",
+      "targets": [],
+      "value": "Bonjour, Nessma !"
+    }, {
+      "id": "3ff6ee12-f743-4f85-9441-877385dae838",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5c98e01f-f17a-46dd-98ca-a87d28cd9fa9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["11302b79-9a4c-4a69-93a9-e3436ed5c8d3"]
+  }],
+  "urls": ["https://safatelli.github.io/tp-test-logiciel/assets/hello.html"],
+  "plugins": []
+}
